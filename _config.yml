@@ -1,0 +1,11 @@
+title: Scarborough Osteopathy
+email: hello@scarboroughosteopathy.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Scarborough Osteopathy is the clinic of Dr Elizabeth Jury, a British School of Osteopathy trained Osteopath specialising in sports injuries and maternity.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://scarboroughosteopathy.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed

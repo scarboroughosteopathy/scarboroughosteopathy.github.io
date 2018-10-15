@@ -1,0 +1,52 @@
+.container {
+  max-width: 980px;
+  margin: 0px auto;
+}
+.hero {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url("./images/scarbs.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  padding: 15px 15px 0;
+  .container {
+    width: 750px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .hero-content {
+    h2 {
+      color: #fff;
+      font-size: 32px;
+      margin-top: 150px;
+      margin-bottom: 15px;
+      text-shadow: 0 0 4px rgba(0,0,0,0.4);
+    }
+    .booking-button {
+      display: inline-block;
+      padding: 15px 40px;
+      font-size: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background: $third-color;
+      color: $fifth-color;
+      transition: 0.3s ease;
+      &:hover {
+        background: $second-color;
+      }
+    }
+  }
+}
+.welcome {
+  margin-top: 100px;
+  padding: 30px 30px 15px;
+  background-color: #fff;
+  hr {
+    margin: 30px 0;
+    border: none;
+    border-bottom: 1px solid $fourth-color;
+  }
+  .small {
+    font-size: 0.85em;
+    text-align: right;
+  }
+}

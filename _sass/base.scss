@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+// Variables
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 300;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.6;
+
+$brand-color:      #216ca5;
+$second-color:     #98c1d9;
+$third-color:      #e0fbfc;
+$fourth-color:     #8ab0ab;
+$fifth-color:      #3e505b;
+
+// Reset spacing
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $base-font-family;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5 {
+  color: $fifth-color;
+  margin-bottom: 1em;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  padding-bottom: 15px;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $second-color;
+}
+
+// Import partials.
+@import
+  "breakpoints",
+  "header",
+  "footer",
+  "layout"
+;
