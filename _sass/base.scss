@@ -3,7 +3,8 @@
 // Variables
 $base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 300;
+$base-font-weight: 400;
+$headings-font-family: 'Merriweather', $base-font-family;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
 
@@ -12,11 +13,12 @@ $second-color:     #98c1d9;
 $third-color:      #e0fbfc;
 $fourth-color:     #8ab0ab;
 $fifth-color:      #3e505b;
+$background-grey:  #f8f8f8;
 
 // Reset spacing
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure, li {
   margin: 0;
   padding: 0;
 }
@@ -30,18 +32,46 @@ img {
   max-width: 100%;
 }
 h1, h2, h3, h4, h5 {
+  font-family: $headings-font-family;
   color: $fifth-color;
   margin-bottom: 1em;
 }
+h3 {
+  color: $second-color;
+}
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   padding-bottom: 15px;
+  max-width: 700px;
+}
+.small {
+  font-size: 0.85em;
 }
 a {
   text-decoration: none;
-  font-weight: bold;
-  color: $second-color;
+  color: $brand-color;
+}
+ul {
+  padding-left: 45px;
+  margin-bottom: 15px;
+}
+li {
+  @extend p;
+  padding-bottom: 0.5em;
+}
+.button {
+  font-family: $headings-font-family;
+  margin: 1em 0;
+  padding: 12px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: $brand-color;
+  color: $third-color;
+  transition: 0.3s ease;
+  border-radius: 4px;
+  &:hover {
+    background: $fifth-color;
+  }
 }
 
 // Import partials.
@@ -49,5 +79,6 @@ a {
   "breakpoints",
   "header",
   "footer",
-  "layout"
+  "layout",
+  "404"
 ;

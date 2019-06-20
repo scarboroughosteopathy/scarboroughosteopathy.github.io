@@ -3,64 +3,96 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/main.css">
   <title>Scarborough Osteopathy</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142485018-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-142485018-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WG6L3S9');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
-<body>
+<body><header class="site-header">
 
-    <!--<header>
-
-  <div class="container site-header">
-
+  <div class="container navbar">
     <div class="brand">
-      <a href="./">Scarborough Osteopathy</a>
+      <a href=http://localhost:4000/>
+        <img id="header_logo" src=http://localhost:4000/assets/images/logotype.png alt="Scarborough Osteopathy" />
+      </a>
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
     <nav>
-      <ul>
-        <li><a href="#about" class="smooth-scroll">About</a></li>
-        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
-      <ul>
+      <a href="#about" class="smooth-scroll">About</a>
+      <a href="#staff" class="smooth-scroll">Staff</a>
+      <a href="#newpatients" class="smooth-scroll">New Patients</a>
+      <a href="#contact" class="smooth-scroll">Contact</a>
+      <a class="btn header-btn" href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Make a Booking</a>
     </nav>
 
   </div>
 
 </header>
--->
+<main class="page-content" aria-label="Content">
+      <section id="error">
+  <div class="container">
+    <h2>404</h2>
 
-    <main class="page-content" aria-label="Content">
-      <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+    <p><strong>Page not found :(</strong></p>
+    <p>Sorry about that! Try one of the links above or below.</p>
+  </div>
+</section>
 
-<div class="container">
-  <h1>404</h1>
+    </main><footer class="site-footer">
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column column-left">
+        <a href=http://localhost:4000/>
+          <img class="logo" src=http://localhost:4000/assets/images/logo.png alt="Scarborough Osteopathy" />
+        </a>
+      </div>
+      <div class="footer-column column-middle">
+        <li><a href="#about" class="smooth-scroll">About</a></li>
+        <li><a href="#staff" class="smooth-scroll">Staff</a></li>
+        <li><a href="#newpatients" class="smooth-scroll">New Patients</a></li>
+        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+        <li><a href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Make an Appointment</a></li>
+      </div>
+      <div class="footer-column column-right footer-footer">
+        <p><a href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Online Bookings</a> are powered by Clinko. For more information, see the <a href="https://www.cliniko.com/security" target="_blank">Clinko privacy policy</a>.</p>
+        <p>Header photo by <a href="https://unsplash.com/photos/HOrR7PQMBj0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Austin Schmid</a>.</p>
+        <p>Treatment photo by <a href="https://unsplash.com/@heftiba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Toa Heftiba</a>.</p>
+        <p>Made with &hearts; in the Channel Islands.</p>
+        <p>&copy; Scarborough Osteopathy 2019</p>
+      </div>
+    </div>
+  </div>
 
-    </main>
-
-    <!--<footer class="site-footer">
-
-  <p>This is the footer</p>
 
 </footer>
--->
-
-  </body>
+</body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
   <script src="./assets/scripts.js"></script>
+  <script src="./assets/error.js"></script>
 
 </html>

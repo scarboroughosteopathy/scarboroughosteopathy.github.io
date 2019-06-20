@@ -1,52 +1,178 @@
-.container {
-  max-width: 980px;
+p {
+  @include for-tablet-portrait-up {
+    font-size: 18px;
+  };
+}.container {
+  max-width: 1020px;
   margin: 0px auto;
+  padding: 0 15px;
+  @include for-tablet-landscape-up {
+    padding: 0;
+  };
 }
 .hero {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url("./images/scarbs.jpg") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url("./images/wave.jpg") no-repeat center bottom;
   background-size: cover;
+  height: 350px;
   display: flex;
-  min-height: 100vh;
-  padding: 15px 15px 0;
+  align-items: center;
+  @include for-tablet-portrait-up {
+    height: 60vh;
+  };
   .container {
-    width: 750px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
-  .hero-content {
-    h2 {
-      color: #fff;
-      font-size: 32px;
-      margin-top: 150px;
-      margin-bottom: 15px;
-      text-shadow: 0 0 4px rgba(0,0,0,0.4);
+    width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    @include for-tablet-portrait-up {
+      padding: 30px;
+    };
+    .lead {
+      max-width: 100%;
+      font-size: 15px;
+      font-family: $headings-font-family;
+      font-weight: 400;
+      @include for-tablet-portrait-up {
+        font-size: 28px;
+      };
     }
     .booking-button {
+      @extend .button;
+      padding: 10px 25px;
+      font-size: 16px;
       display: inline-block;
-      padding: 15px 40px;
-      font-size: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      background: $third-color;
-      color: $fifth-color;
-      transition: 0.3s ease;
-      &:hover {
-        background: $second-color;
-      }
+      @include for-tablet-portrait-up {
+        padding: 15px 40px;
+        font-size: 20px;
+      };
     }
   }
 }
-.welcome {
-  margin-top: 100px;
-  padding: 30px 30px 15px;
-  background-color: #fff;
-  hr {
-    margin: 30px 0;
-    border: none;
-    border-bottom: 1px solid $fourth-color;
+.button-wrapper {
+  margin: 1em 0 2em;
+}
+section {
+  padding: 50px 0;
+}
+.column_wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  @include for-tablet-landscape-up {
+    flex-direction: row-reverse;
+  };
+  align-items: stretch;
+  .left_half,
+  .right_half {
+    flex: 0 0 100%;
+    min-height: 400px;
+    @include for-tablet-landscape-up {
+      flex: 0 0 50%;
+    };
   }
-  .small {
-    font-size: 0.85em;
-    text-align: right;
+  .left_half {
+    padding: 30px 10px;
+    background: $background-grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include for-tablet-landscape-up {
+      padding: 60px 80px;
+    };
+  }
+}
+#staff {
+  .liz_copy {
+    h3 {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+      color: #777;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 32px;
+      color: $brand-color;
+    }
+  }
+  .liz_img {
+    background: url(/assets/images/drjury.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.newspaper {
+  @include for-tablet-landscape-up {
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: 2px solid $brand-color;
+  };
+}
+#aboutosteo {
+  padding-bottom: 100px;
+}
+#newpatients {
+  background-color: $background-grey;
+  .treatment_img {
+    background: url(/assets/images/treatment.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.deck {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.card {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: $third-color;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  min-height: 320px;
+  @include for-tablet-portrait-up {
+    padding: 20px 10px;
+  };
+  @include for-tablet-landscape-up {
+    padding: 20px;
+    flex: 0 0 48%;
+  };
+  .card_heading {
+    flex: 0;
+    h2 {
+      font-size: 20px;
+      color: $brand-color;
+      padding-bottom: 10px;
+    }
+    h3 {
+      font-size: 16px;
+      color: $brand-color;
+      padding-bottom: 10px;
+    }
+  }
+  .card_copy {
+    flex: 1;
+    p {
+      font-size: 16px;
+    }
+  }
+  .card_link {
+    flex: 0;
+    margin: 0 0 0 auto;
+    padding: 8px 14px;
+    background: $brand-color;
+    color: #fff;
+  }
+}
+.map_card {
+  padding: 0;
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }

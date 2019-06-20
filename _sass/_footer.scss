@@ -1,0 +1,74 @@
+.site-footer {
+  border-top: 1px solid $brand-color;
+  margin-top: 50px;
+  background: $background-grey;
+  padding: 50px 0;
+  .footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    .logo {
+      max-width: 180px;
+    }
+    .icon_bg {
+      margin-left: 15px;
+      margin-right: 15px;
+      max-width: 55px;
+      @include for-tablet-landscape-up {
+        margin-left: 0;
+      }
+    }
+    .footer-column {
+      flex: 0 0 100%;
+      list-style-type: none;
+      text-align: center;
+      padding-bottom: 30px;
+      @include for-tablet-landscape-up {
+        flex: 0 0 31%;
+      };
+      li {
+        margin-bottom: 15px;
+        a {
+          font-weight: normal;
+          font-size: 15px;
+        }
+      }
+    }
+    .column-left,
+    .column-middle {
+      @include for-tablet-landscape-up {
+        text-align: left;
+      };
+    }
+    .column-left {
+      @include for-tablet-landscape-up {
+        flex: 0 0 20%;
+      };
+    }
+    .column-middle {
+      @include for-tablet-landscape-up {
+        flex: 0 0 40%;
+      };
+    }
+    .column-right {
+      @include for-tablet-landscape-up {
+        flex: 0 0 31%;
+        text-align: right;
+      };
+    }
+  }
+  .footer-footer {
+    text-align: center;
+    @include for-tablet-landscape-up {
+      text-align: right;
+    };
+    p {
+      max-width: none;
+      margin-right: 0;
+      margin-left: auto;
+      font-size: 14px;
+    }
+  }
+}

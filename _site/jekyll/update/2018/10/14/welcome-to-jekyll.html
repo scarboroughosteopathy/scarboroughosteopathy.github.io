@@ -3,31 +3,60 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/main.css">
   <title>Scarborough Osteopathy</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142485018-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-142485018-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WG6L3S9');</script>
+  <!-- End Google Tag Manager -->
+
 </head>
 <body>
 
-    <!--<header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG6L3S9"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) --><header class="site-header">
 
-  <div class="container site-header">
-
+  <div class="container navbar">
     <div class="brand">
-      <a href="./">Scarborough Osteopathy</a>
+      <a href=http://localhost:4000/>
+        <img id="header_logo" src=http://localhost:4000/assets/images/logotype.png alt="Scarborough Osteopathy" />
+      </a>
+      <button class="hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
     <nav>
-      <ul>
-        <li><a href="#about" class="smooth-scroll">About</a></li>
-        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
-      <ul>
+      <a href="#about" class="smooth-scroll">About</a>
+      <a href="#staff" class="smooth-scroll">Staff</a>
+      <a href="#newpatients" class="smooth-scroll">New Patients</a>
+      <a href="#contact" class="smooth-scroll">Contact</a>
+      <a class="btn header-btn" href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Make a Booking</a>
     </nav>
 
   </div>
 
 </header>
--->
-
-    <main class="page-content" aria-label="Content">
+<main class="page-content" aria-label="Content">
       <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
@@ -43,16 +72,35 @@
 <p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
 
 
-    </main>
+    </main><footer class="site-footer">
 
-    <!--<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column column-left">
+        <a href=http://localhost:4000/>
+          <img class="logo" src=http://localhost:4000/assets/images/logo.png alt="Scarborough Osteopathy" />
+        </a>
+      </div>
+      <div class="footer-column column-middle">
+        <li><a href="#about" class="smooth-scroll">About</a></li>
+        <li><a href="#staff" class="smooth-scroll">Staff</a></li>
+        <li><a href="#newpatients" class="smooth-scroll">New Patients</a></li>
+        <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+        <li><a href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Make an Appointment</a></li>
+      </div>
+      <div class="footer-column column-right footer-footer">
+        <p><a href="https://scarborough-osteopathy.cliniko.com/bookings" target="_blank">Online Bookings</a> are powered by Clinko. For more information, see the <a href="https://www.cliniko.com/security" target="_blank">Clinko privacy policy</a>.</p>
+        <p>Header photo by <a href="https://unsplash.com/photos/HOrR7PQMBj0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Austin Schmid</a>.</p>
+        <p>Treatment photo by <a href="https://unsplash.com/@heftiba?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Toa Heftiba</a>.</p>
+        <p>Made with &hearts; in the Channel Islands.</p>
+        <p>&copy; Scarborough Osteopathy 2019</p>
+      </div>
+    </div>
+  </div>
 
-  <p>This is the footer</p>
 
 </footer>
--->
-
-  </body>
+</body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
   <script src="./assets/scripts.js"></script>
