@@ -14,7 +14,7 @@
     transition: 0.3s ease;
     @include for-tablet-landscape-up {
       margin-top: 0;
-      padding: 15px 15px 10px;
+      padding: 30px 15px;
     }
   }
   .menu-open {
@@ -29,9 +29,21 @@
       flex: 0 0 25%;
     }
   }
+  .header-logo {
+    @include for-tablet-landscape-up {
+      position: absolute;
+      background: #fff;
+      padding: 15px 25px;
+      top: 0;
+      border-radius: 6px;
+    }
+  }
   a {
     img {
-      max-width: 140px;
+      max-width: 150px;
+      @include for-tablet-landscape-up {
+        max-width: 185px;
+      }
     }
   }
   button {

@@ -26,11 +26,13 @@ li { padding-bottom: 0.5em; }
 .site-header { background: #fff; width: 100%; }
 @media (min-width: 650px) { .site-header { background: #fff; } }
 .site-header .container { margin-top: -280px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap-reverse; padding: 15px 10px 10px; transition: 0.3s ease; }
-@media (min-width: 900px) { .site-header .container { margin-top: 0; padding: 15px 15px 10px; } }
+@media (min-width: 900px) { .site-header .container { margin-top: 0; padding: 30px 15px; } }
 .site-header .menu-open { margin-top: 0; }
 .site-header .brand { flex: 0 0 100%; display: flex; align-items: center; justify-content: space-between; }
 @media (min-width: 900px) { .site-header .brand { flex: 0 0 25%; } }
-.site-header a img { max-width: 140px; }
+@media (min-width: 900px) { .site-header .header-logo { position: absolute; background: #fff; padding: 15px 25px; top: 0; border-radius: 6px; } }
+.site-header a img { max-width: 150px; }
+@media (min-width: 900px) { .site-header a img { max-width: 185px; } }
 @media (min-width: 900px) { .site-header button { display: none; } }
 .site-header nav { display: block; flex: 0 0 100%; padding: 15px 0 10px; border-bottom: 1px solid transparent; }
 @media (min-width: 900px) { .site-header nav { padding: 0; margin: 0; flex: 0 0 74%; display: block; text-align: right; } }
@@ -101,10 +103,12 @@ li { padding-bottom: 0.5em; }
 @media (min-width: 900px) { .container { padding: 0; } }
 
 .hero { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6)), url("./images/wave.jpg") no-repeat center bottom; background-size: cover; height: 350px; display: flex; align-items: center; }
-@media (min-width: 650px) { .hero { height: 60vh; } }
+@media (min-width: 650px) { .hero { height: 53vh; } }
 .hero .container { width: 900px; margin: 0 auto; padding: 15px; text-align: center; }
 @media (min-width: 650px) { .hero .container { padding: 30px; } }
 .hero .container .lead { max-width: 100%; font-size: 15px; font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400; }
+@media (min-width: 370px) { .hero .container .lead { max-width: 90%; margin-left: auto; margin-right: auto; } }
+@media (min-width: 400px) { .hero .container .lead { max-width: 100%; } }
 @media (min-width: 650px) { .hero .container .lead { font-size: 28px; } }
 .hero .container .booking-button { padding: 10px 25px; font-size: 16px; display: inline-block; }
 @media (min-width: 650px) { .hero .container .booking-button { padding: 15px 40px; font-size: 20px; } }
