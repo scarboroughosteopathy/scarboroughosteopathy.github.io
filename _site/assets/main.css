@@ -20,8 +20,8 @@ ul { padding-left: 45px; margin-bottom: 15px; }
 
 li { padding-bottom: 0.5em; }
 
-.button, .hero .container .booking-button { font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; margin: 1em 0; padding: 12px 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background: #216ca5; color: #e0fbfc; transition: 0.3s ease; border-radius: 4px; }
-.button:hover, .hero .container .booking-button:hover { background: #3e505b; }
+.button, .hero .container .booking-button, .button-group .second-cta { font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; margin: 1em 0; padding: 12px 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); background: #216ca5; color: #e0fbfc; transition: 0.3s ease; border-radius: 4px; }
+.button:hover, .hero .container .booking-button:hover, .button-group .second-cta:hover { background: #3e505b; }
 
 .site-header { background: #fff; width: 100%; }
 @media (min-width: 650px) { .site-header { background: #fff; } }
@@ -87,7 +87,7 @@ li { padding-bottom: 0.5em; }
 @media (min-width: 900px) { .site-footer .footer-content .icon_bg { margin-left: 0; } }
 .site-footer .footer-content .footer-column { flex: 0 0 100%; list-style-type: none; text-align: center; padding-bottom: 30px; }
 @media (min-width: 900px) { .site-footer .footer-content .footer-column { flex: 0 0 31%; } }
-.site-footer .footer-content .footer-column li { margin-bottom: 15px; }
+.site-footer .footer-content .footer-column li { margin-left: auto; margin-right: auto; margin-bottom: 15px; }
 .site-footer .footer-content .footer-column li a { font-weight: normal; font-size: 15px; }
 @media (min-width: 900px) { .site-footer .footer-content .column-left, .site-footer .footer-content .column-middle { text-align: left; } }
 @media (min-width: 900px) { .site-footer .footer-content .column-left { flex: 0 0 20%; } }
@@ -95,6 +95,7 @@ li { padding-bottom: 0.5em; }
 @media (min-width: 900px) { .site-footer .footer-content .column-right { flex: 0 0 31%; text-align: right; } }
 .site-footer .footer-footer { text-align: center; }
 @media (min-width: 900px) { .site-footer .footer-footer { text-align: right; } }
+@media (min-width: 900px) { .site-footer .footer-footer .button-group { justify-content: flex-end; } }
 .site-footer .footer-footer p, .site-footer .footer-footer li { max-width: none; margin-right: 0; margin-left: auto; font-size: 14px; }
 
 @media (min-width: 650px) { p, li { font-size: 18px; } }
@@ -110,10 +111,15 @@ li { padding-bottom: 0.5em; }
 @media (min-width: 370px) { .hero .container .lead { max-width: 90%; margin-left: auto; margin-right: auto; } }
 @media (min-width: 400px) { .hero .container .lead { max-width: 100%; } }
 @media (min-width: 650px) { .hero .container .lead { font-size: 28px; } }
+.hero .container .hero-buttons { display: flex; justify-content: center; }
+@media (min-width: 1200px) { .hero .container .hero-buttons { justify-content: flex-start; } }
 .hero .container .booking-button { padding: 10px 25px; font-size: 16px; display: inline-block; }
 @media (min-width: 650px) { .hero .container .booking-button { padding: 15px 40px; font-size: 20px; } }
 
-.button-wrapper { margin: 1em 0 2em; }
+.button-group { display: flex; align-items: center; justify-content: center; margin: 0 0 2em; }
+@media (min-width: 900px) { .button-group { justify-content: flex-start; } }
+.button-group .second-cta { margin-right: 30px; }
+@media (min-width: 900px) { .button-group .second-cta { padding: 16px 30px; } }
 
 section { padding: 50px 0; }
 
@@ -134,6 +140,12 @@ section { padding: 50px 0; }
 
 #newpatients { background-color: #f8f8f8; }
 #newpatients .treatment_img { background: url(/assets/images/treatment.jpg) no-repeat center center; background-size: cover; }
+
+.icon_bg { display: inline-block; background: #216ca5; padding: 10px; width: 45px; border-radius: 5px; margin: 1rem 30px 1rem 0; transition: 0.4s ease; }
+@media (min-width: 900px) { .icon_bg { padding: 12px; width: 55px; } }
+.icon_bg:hover { background: #3e505b; }
+
+.social_icons { display: block; max-width: 100%; }
 
 .deck { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 30px; }
 

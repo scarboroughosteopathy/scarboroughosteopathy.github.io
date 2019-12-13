@@ -29,6 +29,8 @@
         flex: 0 0 31%;
       };
       li {
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 15px;
         a {
           font-weight: normal;
@@ -64,6 +66,11 @@
     @include for-tablet-landscape-up {
       text-align: right;
     };
+    .button-group {
+      @include for-tablet-landscape-up {
+        justify-content: flex-end;
+      };
+    }
     p {
       max-width: none;
       margin-right: 0;

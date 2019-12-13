@@ -44,6 +44,13 @@ p {
         font-size: 28px;
       };
     }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      @include for-desktop-up {
+        justify-content: flex-start;
+      }
+    }
     .booking-button {
       @extend .button;
       padding: 10px 25px;
@@ -56,8 +63,21 @@ p {
     }
   }
 }
-.button-wrapper {
-  margin: 1em 0 2em;
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2em;
+  @include for-tablet-landscape-up {
+    justify-content: flex-start;
+  }
+  .second-cta {
+    @extend .button;
+    margin-right: 30px;
+    @include for-tablet-landscape-up {
+      padding: 16px 30px;
+    }
+  }
 }
 section {
   padding: 50px 0;
@@ -126,6 +146,26 @@ section {
     background: url(/assets/images/treatment.jpg) no-repeat center center;
     background-size: cover;
   }
+}
+.icon_bg {
+  display: inline-block;
+  background: $brand-color;
+  padding: 10px;
+  width: 45px;
+  border-radius: 5px;
+  margin: 1rem 30px 1rem 0;
+  transition: 0.4s ease;
+  @include for-tablet-landscape-up {
+    padding: 12px;
+    width: 55px;
+  }
+  &:hover {
+    background: $fifth-color;
+  }
+}
+.social_icons {
+  display: block;
+  max-width: 100%;
 }
 .deck {
   display: flex;
