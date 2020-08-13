@@ -87,9 +87,6 @@ section {
   padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
-  @include for-tablet-landscape-up {
-    flex-direction: row-reverse;
-  };
   align-items: stretch;
   .left_half,
   .right_half {
@@ -99,36 +96,41 @@ section {
       flex: 0 0 50%;
     };
   }
-  .left_half {
-    padding: 30px 10px;
-    background: $background-grey;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    @include for-tablet-landscape-up {
-      padding: 60px 80px;
-    };
+}
+.row-reverse {
+  @include for-tablet-landscape-up {
+    flex-direction: row-reverse;
+  };
+}
+.liz_copy, .holly_copy {
+  padding: 30px 10px;
+  background: $background-grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @include for-tablet-landscape-up {
+    padding: 60px 80px;
+  };
+  h3 {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    color: #777;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 32px;
+    color: $brand-color;
   }
 }
-#staff {
-  .liz_copy {
-    h3 {
-      font-size: 14px;
-      letter-spacing: 0.5px;
-      margin-bottom: 15px;
-      color: #777;
-    }
-    h2 {
-      margin-top: 0;
-      margin-bottom: 18px;
-      font-size: 32px;
-      color: $brand-color;
-    }
-  }
-  .liz_img {
-    background: url(/assets/images/drjury.jpg) no-repeat center center;
-    background-size: cover;
-  }
+.liz_img {
+  background: url(/assets/images/drjury.jpg) no-repeat center center;
+  background-size: cover;
+}
+.holly_img {
+  background: url(/assets/images/drholly.jpg) no-repeat center center;
+  background-size: cover;
 }
 .newspaper {
   @include for-tablet-landscape-up {

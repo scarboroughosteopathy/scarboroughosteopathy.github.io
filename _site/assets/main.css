@@ -124,15 +124,19 @@ li { padding-bottom: 0.5em; }
 section { padding: 50px 0; }
 
 .column_wrapper { padding-top: 0; padding-bottom: 0; display: flex; flex-wrap: wrap; align-items: stretch; }
-@media (min-width: 900px) { .column_wrapper { flex-direction: row-reverse; } }
 .column_wrapper .left_half, .column_wrapper .right_half { flex: 0 0 100%; min-height: 400px; }
 @media (min-width: 900px) { .column_wrapper .left_half, .column_wrapper .right_half { flex: 0 0 50%; } }
-.column_wrapper .left_half { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
-@media (min-width: 900px) { .column_wrapper .left_half { padding: 60px 80px; } }
 
-#staff .liz_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #777; }
-#staff .liz_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
-#staff .liz_img { background: url(/assets/images/drjury.jpg) no-repeat center center; background-size: cover; }
+@media (min-width: 900px) { .row-reverse { flex-direction: row-reverse; } }
+
+.liz_copy, .holly_copy { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
+@media (min-width: 900px) { .liz_copy, .holly_copy { padding: 60px 80px; } }
+.liz_copy h3, .holly_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #777; }
+.liz_copy h2, .holly_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
+
+.liz_img { background: url(/assets/images/drjury.jpg) no-repeat center center; background-size: cover; }
+
+.holly_img { background: url(/assets/images/drholly.jpg) no-repeat center center; background-size: cover; }
 
 @media (min-width: 900px) { .newspaper { column-count: 2; column-gap: 50px; column-rule: 2px solid #216ca5; } }
 
