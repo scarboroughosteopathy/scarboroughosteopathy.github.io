@@ -129,12 +129,14 @@ section { padding: 50px 0; }
 
 @media (min-width: 900px) { .row-reverse { flex-direction: row-reverse; } }
 
-.liz_copy, .holly_copy { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
-@media (min-width: 900px) { .liz_copy, .holly_copy { padding: 60px 80px; } }
-.liz_copy h3, .holly_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #777; }
-.liz_copy h2, .holly_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
+.liz_copy, .holly_copy, .nikela_copy { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
+@media (min-width: 900px) { .liz_copy, .holly_copy, .nikela_copy { padding: 60px 80px; } }
+.liz_copy h3, .holly_copy h3, .nikela_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #777; }
+.liz_copy h2, .holly_copy h2, .nikela_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
 
 .liz_img { background: url(/assets/images/drjury.jpg) no-repeat center center; background-size: cover; }
+
+.nikela_img { background: url(/assets/images/drnikela.jpeg) no-repeat center center; background-size: cover; }
 
 .holly_img { background: url(/assets/images/drholly.jpg) no-repeat center center; background-size: cover; }
 
