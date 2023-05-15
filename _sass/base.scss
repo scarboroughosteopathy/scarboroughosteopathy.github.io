@@ -1,24 +1,39 @@
 @charset "utf-8";
 
 // Variables
-$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$base-font-size:   16px;
+$base-font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$base-font-size: 16px;
 $base-font-weight: 400;
-$headings-font-family: 'Merriweather', $base-font-family;
-$small-font-size:  $base-font-size * 0.875;
+$headings-font-family: "Merriweather", $base-font-family;
+$small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.6;
 
-$brand-color:      #216ca5;
-$second-color:     #98c1d9;
-$third-color:      #e0fbfc;
-$fourth-color:     #8ab0ab;
-$fifth-color:      #3e505b;
-$background-grey:  #f8f8f8;
+$brand-color: #216ca5;
+$second-color: #98c1d9;
+$third-color: #e0fbfc;
+$fourth-color: #8ab0ab;
+$fifth-color: #3e505b;
+$background-grey: #f8f8f8;
 
 // Reset spacing
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure,
+li {
   margin: 0;
   padding: 0;
 }
@@ -31,13 +46,17 @@ body {
 img {
   max-width: 100%;
 }
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $headings-font-family;
   color: $fifth-color;
   margin-bottom: 1em;
 }
 h3 {
-  color: $second-color;
+  color: $brand-color;
 }
 p {
   font-size: 16px;
@@ -64,7 +83,7 @@ li {
   font-family: $headings-font-family;
   margin: 1em 0;
   padding: 12px 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background: $brand-color;
   color: $third-color;
   transition: 0.3s ease;
@@ -75,10 +94,4 @@ li {
 }
 
 // Import partials.
-@import
-  "breakpoints",
-  "header",
-  "footer",
-  "layout",
-  "404"
-;
+@import "breakpoints", "header", "footer", "layout", "404";

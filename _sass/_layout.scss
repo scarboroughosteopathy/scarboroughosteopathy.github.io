@@ -1,24 +1,30 @@
 p {
   @include for-tablet-portrait-up {
     font-size: 18px;
-  };
-}.container {
+  }
+}
+.container {
   max-width: 1020px;
   margin: 0px auto;
   padding: 0 15px;
   @include for-tablet-landscape-up {
     padding: 0;
-  };
+  }
 }
 .hero {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.6)), url("./images/wave.jpg") no-repeat center bottom;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("./images/wave.jpg") no-repeat center bottom;
   background-size: cover;
   height: 350px;
   display: flex;
   align-items: center;
   @include for-tablet-portrait-up {
     height: 53vh;
-  };
+  }
   .container {
     width: 900px;
     margin: 0 auto;
@@ -26,23 +32,25 @@ p {
     text-align: center;
     @include for-tablet-portrait-up {
       padding: 30px;
-    };
+    }
     .lead {
       max-width: 100%;
       font-size: 15px;
       font-family: $headings-font-family;
       font-weight: 400;
+      color: #333;
       @media (min-width: 370px) {
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
-      };
+      }
       @include for-big-phones-up {
         max-width: 100%;
-      };
+        line-height: 1.4em;
+      }
       @include for-tablet-portrait-up {
         font-size: 28px;
-      };
+      }
     }
     .hero-buttons {
       display: flex;
@@ -59,7 +67,7 @@ p {
       @include for-tablet-portrait-up {
         padding: 15px 40px;
         font-size: 20px;
-      };
+      }
     }
   }
 }
@@ -94,15 +102,19 @@ section {
     min-height: 400px;
     @include for-tablet-landscape-up {
       flex: 0 0 50%;
-    };
+    }
   }
 }
 .row-reverse {
   @include for-tablet-landscape-up {
     flex-direction: row-reverse;
-  };
+  }
 }
-.liz_copy, .holly_copy, .nikela_copy, .emma_copy, .alex_copy {
+.liz_copy,
+.holly_copy,
+.nikela_copy,
+.addison_copy,
+.alex_copy {
   padding: 30px 10px;
   background: $background-grey;
   display: flex;
@@ -110,12 +122,12 @@ section {
   justify-content: space-around;
   @include for-tablet-landscape-up {
     padding: 60px 80px;
-  };
+  }
   h3 {
     font-size: 14px;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
-    color: #777;
+    color: #444;
   }
   h2 {
     margin-top: 0;
@@ -136,8 +148,8 @@ section {
   background: url(/assets/images/drholly.jpg) no-repeat center center;
   background-size: cover;
 }
-.emma_img {
-  background: url(/assets/images/dremma.jpeg) no-repeat center center;
+.addison_img {
+  background: url(/assets/images/addison.jpeg) no-repeat center center;
   background-size: cover;
 }
 .alex_img {
@@ -149,7 +161,7 @@ section {
     column-count: 2;
     column-gap: 50px;
     column-rule: 2px solid $brand-color;
-  };
+  }
 }
 #aboutosteo {
   padding-bottom: 100px;
@@ -199,11 +211,11 @@ section {
   min-height: 320px;
   @include for-tablet-portrait-up {
     padding: 20px 10px;
-  };
+  }
   @include for-tablet-landscape-up {
     padding: 20px;
     flex: 0 0 48%;
-  };
+  }
   .card_heading {
     flex: 0;
     h2 {

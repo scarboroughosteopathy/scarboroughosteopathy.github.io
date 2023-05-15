@@ -8,7 +8,7 @@ img { max-width: 100%; }
 
 h1, h2, h3, h4, h5 { font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color: #3e505b; margin-bottom: 1em; }
 
-h3 { color: #98c1d9; }
+h3 { color: #216ca5; }
 
 p, li { font-size: 16px; line-height: 1.6; padding-bottom: 15px; max-width: 700px; }
 
@@ -85,9 +85,9 @@ li { padding-bottom: 0.5em; }
 .site-footer .footer-content .logo { max-width: 180px; }
 .site-footer .footer-content .icon_bg { margin-left: 15px; margin-right: 15px; max-width: 55px; }
 @media (min-width: 900px) { .site-footer .footer-content .icon_bg { margin-left: 0; } }
-.site-footer .footer-content .footer-column { flex: 0 0 100%; list-style-type: none; text-align: center; padding-bottom: 30px; }
-@media (min-width: 900px) { .site-footer .footer-content .footer-column { flex: 0 0 31%; } }
-.site-footer .footer-content .footer-column li { margin-left: auto; margin-right: auto; margin-bottom: 15px; }
+.site-footer .footer-content .footer-column ul { flex: 0 0 100%; list-style-type: none; text-align: center; padding-bottom: 30px; }
+@media (min-width: 900px) { .site-footer .footer-content .footer-column ul { flex: 0 0 31%; text-align: left; } }
+.site-footer .footer-content .footer-column li { margin-left: auto; margin-right: auto; margin-bottom: 10px; }
 .site-footer .footer-content .footer-column li a { font-weight: normal; font-size: 15px; }
 @media (min-width: 900px) { .site-footer .footer-content .column-left, .site-footer .footer-content .column-middle { text-align: left; } }
 @media (min-width: 900px) { .site-footer .footer-content .column-left { flex: 0 0 20%; } }
@@ -107,9 +107,9 @@ li { padding-bottom: 0.5em; }
 @media (min-width: 650px) { .hero { height: 53vh; } }
 .hero .container { width: 900px; margin: 0 auto; padding: 15px; text-align: center; }
 @media (min-width: 650px) { .hero .container { padding: 30px; } }
-.hero .container .lead { max-width: 100%; font-size: 15px; font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400; }
+.hero .container .lead { max-width: 100%; font-size: 15px; font-family: "Merriweather", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 400; color: #333; }
 @media (min-width: 370px) { .hero .container .lead { max-width: 90%; margin-left: auto; margin-right: auto; } }
-@media (min-width: 400px) { .hero .container .lead { max-width: 100%; } }
+@media (min-width: 400px) { .hero .container .lead { max-width: 100%; line-height: 1.4em; } }
 @media (min-width: 650px) { .hero .container .lead { font-size: 28px; } }
 .hero .container .hero-buttons { display: flex; justify-content: center; }
 @media (min-width: 1200px) { .hero .container .hero-buttons { justify-content: flex-start; } }
@@ -129,16 +129,20 @@ section { padding: 50px 0; }
 
 @media (min-width: 900px) { .row-reverse { flex-direction: row-reverse; } }
 
-.liz_copy, .holly_copy, .nikela_copy { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
-@media (min-width: 900px) { .liz_copy, .holly_copy, .nikela_copy { padding: 60px 80px; } }
-.liz_copy h3, .holly_copy h3, .nikela_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #777; }
-.liz_copy h2, .holly_copy h2, .nikela_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
+.liz_copy, .holly_copy, .nikela_copy, .addison_copy, .alex_copy { padding: 30px 10px; background: #f8f8f8; display: flex; align-items: center; justify-content: space-around; }
+@media (min-width: 900px) { .liz_copy, .holly_copy, .nikela_copy, .addison_copy, .alex_copy { padding: 60px 80px; } }
+.liz_copy h3, .holly_copy h3, .nikela_copy h3, .addison_copy h3, .alex_copy h3 { font-size: 14px; letter-spacing: 0.5px; margin-bottom: 15px; color: #444; }
+.liz_copy h2, .holly_copy h2, .nikela_copy h2, .addison_copy h2, .alex_copy h2 { margin-top: 0; margin-bottom: 18px; font-size: 32px; color: #216ca5; }
 
 .liz_img { background: url(/assets/images/drjury.jpg) no-repeat center center; background-size: cover; }
 
 .nikela_img { background: url(/assets/images/drnikela.jpeg) no-repeat center center; background-size: cover; }
 
 .holly_img { background: url(/assets/images/drholly.jpg) no-repeat center center; background-size: cover; }
+
+.addison_img { background: url(/assets/images/addison.jpeg) no-repeat center center; background-size: cover; }
+
+.alex_img { background: url(/assets/images/dralex.jpeg) no-repeat center center; background-size: cover; }
 
 @media (min-width: 900px) { .newspaper { column-count: 2; column-gap: 50px; column-rule: 2px solid #216ca5; } }
 
