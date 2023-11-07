@@ -144,6 +144,8 @@ section { padding: 50px 0; }
 
 .alex_img { background: url(/assets/images/dralex.jpeg) no-repeat center center; background-size: cover; }
 
+.madison_img { background: url(/assets/images/drmadison.jpeg) no-repeat center center; background-size: cover; }
+
 @media (min-width: 900px) { .newspaper { column-count: 2; column-gap: 50px; column-rule: 2px solid #216ca5; } }
 
 #aboutosteo { padding-bottom: 100px; }
